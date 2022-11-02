@@ -1,5 +1,7 @@
 package lezione6Adecco;
 
+import java.util.Scanner;
+
 /**
  * 
  * 
@@ -28,9 +30,70 @@ public class EsercizioCicli4 {
 	public static void main(String[] args) {
 		
 		
+		Scanner key = new Scanner(System.in);
+		
+		
+		boolean isSequenceOk = true;
+		
+		
+		System.out.println("inserire");
+		int numeroUtente = key.nextInt();
+		int index = 0;
+		
+		
+		/*
+		 * 
+		 *      b1  b2  b1 b2
+		 *      10  1   98 1
+		 *
+		 * 		
+		 *      20  2 
+		 * 
+		 * 
+		 * 
+		 * 
+		 */
+		
+		
+		
+		
+		
+		while(numeroUtente != 0 ) {
+			
+			
+			//blocco 1 --- qui devo verificare
+			//se trovo un dispari non va bene
+			if(index % 2 == 0 ) {
+				System.out.println("sono nel blocco 1");
+				
+				if(numeroUtente % 2 != 0)
+					isSequenceOk = false;
+				
+				
+			}else {
+				//non devo trovare pari
+				System.out.println("sono nel blocco 2");
+				
+				
+				if(numeroUtente % 2 == 0)
+					isSequenceOk = false;
+				
+			}
+			
+			System.out.println("inserisci");
+			numeroUtente = key.nextInt();
+			
+			index++;
+		}
+		
+		
 		
 		
 
+		System.out.println("valore finale " + isSequenceOk);
+		
+		
+		key.close();
 	}
 
 }
