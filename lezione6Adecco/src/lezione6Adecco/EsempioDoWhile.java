@@ -9,7 +9,7 @@ public class EsempioDoWhile {
 		do {
 			System.out.println(index * 2 );
 			index++;
-		} while (index <= 10);
+		} while (index >=  10);
 		
 	}
 	
