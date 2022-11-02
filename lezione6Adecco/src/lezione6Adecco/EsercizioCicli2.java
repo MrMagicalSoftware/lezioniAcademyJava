@@ -1,5 +1,7 @@
 package lezione6Adecco;
 
+import java.util.Scanner;
+
 /**
  * 
  * Creare un programma
@@ -22,6 +24,25 @@ public class EsercizioCicli2 {
 	public static void main(String[] args) {
 		
 		
+		Scanner key = new Scanner(System.in);
+	
+		int contaPari = 0;
+		int numeroUtente;
+		
+		do {
+			
+			System.out.println("Inserisci un numero");
+			numeroUtente = key.nextInt();
+			
+			if(numeroUtente % 2 == 0)
+				contaPari++;
+			
+		} while (numeroUtente != - 1);
+		
+		
+		System.out.println("NUMERO DI PARI " + contaPari);
+		
+		key.close();
 	}
 	
 }
