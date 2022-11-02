@@ -1,5 +1,6 @@
 package lezione6Adecco;
 
+import java.util.Scanner;
 
 /**
  * 
@@ -25,6 +26,32 @@ public class Esercizio3 {
 	
 	public static void main(String[] args) {
 		
+		Scanner key = new Scanner(System.in);
+		
+		int numeroUtente;
+		boolean sonoTuttiMultipliDi3 = true;
+		
+		do {
+			
+			
+			System.out.println("inserisci ");
+			numeroUtente = key.nextInt();
+			
+			if(numeroUtente % 3 != 0  && numeroUtente <= 20  )
+				sonoTuttiMultipliDi3 = false;
+			
+		} while (numeroUtente <= 20 );
+		
+		
+		if(sonoTuttiMultipliDi3 )
+			System.out.println("ok sono tutti mul");
+		else 
+			System.out.println("no");
+			
+		
+		
+		
+		key.close();
 	}
 	
 }

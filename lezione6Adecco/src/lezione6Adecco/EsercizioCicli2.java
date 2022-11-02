@@ -37,6 +37,8 @@ public class EsercizioCicli2 {
 			if(numeroUtente % 2 == 0)
 				contaPari++;
 			
+			
+			
 		} while (numeroUtente != - 1);
 		
 		
