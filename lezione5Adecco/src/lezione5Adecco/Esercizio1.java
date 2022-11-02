@@ -10,8 +10,10 @@ import java.util.Scanner;
  * il numero di vocali presenti
  * 
  * Es ciao ------> 3
- * 
- * 
+ * Esempio. 
+ *
+ 
+ 
  * @author mr
  *
  */
