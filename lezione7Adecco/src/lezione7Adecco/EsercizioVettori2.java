@@ -34,7 +34,70 @@ public class EsercizioVettori2 {
 
 	public static void main(String[] args) {
 		
+		
+		
+	
 		Scanner key = new Scanner(System.in);
+		
+		
+		int numeroUtente;
+		
+		//semaforo
+		
+		do {
+			System.out.println("inserisci ");
+			numeroUtente = key.nextInt();
+		} while (numeroUtente > 10 || numeroUtente < 3);
+		
+		int[] vettInt = new int[numeroUtente];
+		
+		System.out.println("hai creato un vettore di grandezza " + vettInt.length);
+		
+		
+		int index = 0 ;
+		
+		
+		while(index < vettInt.length) {
+			System.out.println("inserisci");
+			vettInt[index] = key.nextInt();	
+			index++;
+		}
+		
+		
+		index = 0 ;
+		System.out.println("##################");
+		
+		while(index < vettInt.length) {
+			
+			System.out.println(vettInt[index]);
+			index++;
+		}
+		
+		/**
+		 * 
+		 * 
+		 *           Blocco1        blocco2            blocco3
+		 * 
+		 * 		for(         ;                     ;           ){
+		 * 
+		 * 			istruzioni
+		 * 
+		 *      }
+		 * 
+		 * 
+		 * 
+		 * 
+		 * 
+		 * 
+		 * 
+		 * 
+		 */
+		
+		
+		
+		
+		
+		key.close();
 		
 		
 	}
