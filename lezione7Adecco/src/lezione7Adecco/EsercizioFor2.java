@@ -26,7 +26,6 @@ public class EsercizioFor2 {
 	public static void main(String[] args) {
 		
 		
-		int index = 0;
 		
 		
 		int[] vett = {3 , 4 , 6 , 8 , 15};
@@ -39,6 +38,11 @@ public class EsercizioFor2 {
 			vett[i] *= 2; // vett[i] = vett[i] * 2
 			System.out.print(vett[i] + " ");
 		}
+		
+		
+		
+		
+		
 		
 		
 	}
