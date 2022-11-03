@@ -32,12 +32,12 @@ public class EsercizioFor2 {
 		int[] vett = {3 , 4 , 6 , 8 , 15};
 		
 		
-		System.out.println(vett.length);
+		//System.out.println(vett.length);
 		
 		
 		for (int i = 0; i < vett.length; i++) {
-			
-			System.out.println(vett[i]);
+			vett[i] *= 2; // vett[i] = vett[i] * 2
+			System.out.print(vett[i] + " ");
 		}
 		
 		
