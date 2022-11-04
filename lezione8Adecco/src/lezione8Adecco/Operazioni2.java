@@ -47,6 +47,58 @@ public class Operazioni2 {
 	
 	
 	
+	/*
+	 * 	creare una funzione che prenda
+	 *  in input un numero intero
+	 *  e ritorna il suo successivo.
+	 *  
+	 *  Es  10 ----> 11
+	 *      12 ----->13
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 2- Creare una funzione che prenda
+	 * in input 2 parole e ritorna 
+	 * la parola unita nel seguente modo:
+	 * 
+	 * 
+	 * Es ( "ciao" , "miao") --------> "ciao miao"
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 3- creare una funzione che prenda
+	 * una stringa e ritorna la stringa
+	 * al contrario.
+	 * 
+	 * 
+	 * 
+	 * 
+	 */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 }
