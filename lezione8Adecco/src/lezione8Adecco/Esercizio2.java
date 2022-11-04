@@ -1,5 +1,9 @@
 package lezione8Adecco;
 
+import java.text.DecimalFormat;
+import java.util.Random;
+import java.util.Scanner;
+
 /***
  * 
  * 
@@ -72,4 +76,63 @@ package lezione8Adecco;
 
 public class Esercizio2 {
 
+	public static void main(String[] args) {
+		
+		
+		Scanner key = new Scanner(System.in);
+		Random random  = new Random();
+		DecimalFormat df = new DecimalFormat("0,00");
+		
+		
+		
+		int  numeroUtente ;
+		
+		do {
+			
+			System.out.println("inserisci un numero != 0 ");
+			numeroUtente = key.nextInt();
+			
+		} while (numeroUtente == 0 );
+		
+		
+		
+		double[] vettDouble = new double[10];
+		
+		for (int i = 0; i < vettDouble.length; i++) {
+			vettDouble[i] = random.nextDouble(100) ; // 0 -99
+			System.out.println("Stampo il numero " + (i + 1) + " : " +    vettDouble[i]);
+			
+			vettDouble[i] *= numeroUtente;
+			
+
+			vettDouble[i] =  Double.valueOf(    df.format(vettDouble[i])    );	      
+			System.out.println("Stampo il numero " + (i + 1) + " : " +    vettDouble[i]);
+
+			
+			System.out.println("##################");
+		}
+		
+		
+		
+		
+		
+		key.close();
+	}
+	
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
