@@ -19,6 +19,11 @@ public class Sword {
 	}
 	
 	
+	public void rompiArma() {
+		this.danno = 0;
+		this.tipologia = this.tipologia + " ROTTO/A ";
+	}
+	
 	
 	
 	public void setDanno() {

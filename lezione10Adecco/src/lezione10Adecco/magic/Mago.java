@@ -1,5 +1,6 @@
 package lezione10Adecco.magic;
 
+import java.util.Random;
 
 /***
  * 
@@ -103,6 +104,77 @@ public class Mago {
 	public boolean isAlive() {
 		return isAlive;
 	}
+	
+	
+	// AZIONI -------------------
+	
+	
+
+	/**
+	 * 
+	 * Danno compreso tra 20-50
+	 * 
+	 * @return
+	 */
+	public int folataMagica() {
+		
+		Random random = new Random();
+		
+		return random.nextInt(20, 51);
+	}
+	
+	
+	
+	/**
+	 * 
+	 * 	30 % non toglie danno
+	 *  40 % danno compreso tra 20 - 50
+	 *  30 % colpo critico ---  20 - 150 
+	 * 
+	 * @return
+	 */
+	public int raggioVerde() {
+		
+		Random random = new Random();
+		int sceltaDanno = random.nextInt(1, 11); // 1 -10
+		
+		if(sceltaDanno <= 3)
+			return 0 ;
+		
+		// 4 5 6 7
+		if(sceltaDanno > 3 && sceltaDanno <= 7)
+			return random.nextInt(20, 51);
+		
+		
+		return random.nextInt(20, 151);
+		
+	}
+	
+	
+	public int dannoSpada() {
+		
+		Random random = new Random();
+		
+		int scelta = random.nextInt(0,101);
+		int dannoExtra = random.nextInt(0,11);		
+		
+		//perdo la spada 3 % 
+		if(scelta >= 98) {
+			this.spada.rompiArma();
+		}
+	
+		if(this.spada.getTipologia().equalsIgnoreCase("spadone")) {
+			dannoExtra += 10;
+		}
+					
+		int dannoFinale = this.spada.getDanno() + dannoExtra;
+	
+		return dannoFinale;
+	}
+	
+	
+	
+	
 	
 	
 
