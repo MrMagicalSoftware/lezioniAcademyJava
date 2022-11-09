@@ -53,6 +53,55 @@ package lezione11Adecco;
 public class Esercizi {
 	
 	
+	
+	
+	
+	
+	
+	public int contaElementiDispari(int[] elementi ) {
+
+		int contaDispari = 0;
+		
+		for(int i : elementi) {
+			if(i % 2 != 0 )
+				contaDispari++;
+		}
+		
+		return contaDispari;
+	}
+	
+	
+	
+	
+	public int contaElementiDispari2(int[] elementi ) {
+
+		int contaDispari = 0;
+		
+		for(int i = 0 ; i < elementi.length;i++) {
+			if(elementi[i] % 2 != 0 )
+				contaDispari++;
+		}
+		
+		return contaDispari;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public int somma(int n1 , int n2) {
 		return n1+ n2;
 	}
