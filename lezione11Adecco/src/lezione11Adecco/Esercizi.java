@@ -14,8 +14,9 @@ package lezione11Adecco;
  *     prende in input un vettore
  *     di interi e un numero
  *     e ritorna un intero
- *     che rappresenta quanti numeri
- *     sono maggiori di quel numero
+ *     
+ *     nel seguente modo : 
+ *     
  *     
  *     Es ( [10 , 4 , 6 , 18 ] , 12 ) ----> 3
  * 
@@ -40,8 +41,6 @@ package lezione11Adecco;
  *    (["ciao", "mi" , "he" , "hello"]) -----------> (out---> ["ciao", "hello"])
  * 
  * 
- * 
- * 
  * @author mr
  *
  */
@@ -53,7 +52,82 @@ package lezione11Adecco;
 public class Esercizi {
 	
 	
+	/*
+	 *    { 10 , 8 , 77 } , 20 
+	 * 
+	 *     
+	 *    20 > 10 
+	 *    20 > 8 
+	 *    20 > 77 
+	 * 
+	 * 
+	 */
 	
+	
+	/**
+	 * 
+	 * 		100
+	 * 
+	 * 
+	 *      1 -----------------100
+	 *      
+	 *      n 
+	 *      
+	 *      1 ..................n
+	 * 
+	 * 
+	 * 				10
+	 *       1-----------10/2 ---->    
+	 * 
+	 *       100
+	 *       |--------------> 50 
+	 *       
+	 *       
+	 *       15 
+	 *       
+	 *       1 - 3-5 -15
+	 *       
+	 * 
+	 * 
+	 * 
+	 * @param numero
+	 * @return
+	 */
+	public int quantiDivisori(int numero) {
+		
+		int contaDivisori = 1;
+		
+		for(int i = 1 ; i <= numero/2 ; i++)
+			if(numero % i == 0) {
+				System.out.println("divisore " + i);
+				contaDivisori++;
+			}
+		
+		return contaDivisori;
+	}
+	
+	
+	
+	
+	
+	//     out 								
+	public int contaNumeriMaggioriInVector(int[] vett , int numero) {
+		
+		int contaElementi = 0;
+		
+
+		for(int i= 0 ; i < vett.length ; i++)
+			if(vett[i] < numero)
+				contaElementi++;
+		
+//		for(int element : vett)
+//			if(numero > element)
+//				contaElementi++;
+
+		
+		
+		return contaElementi;
+	}
 	
 	
 	
@@ -92,9 +166,41 @@ public class Esercizi {
 	
 	
 	
+	/*
+	
+		  Creare una funzione che prenda in ingresso
+	 * 	  un vettore di stringhe e ritorna un vettore
+	 *    di stringhe salvando nel vettore solo le stringhe+
+	 *    che hanno >= 3 lunghezza.
+	 *    
+	 *    
+	 *    
+	 *    (["ciao", "mi" , "he" , "hello"])
+	 *     -----------> (out---> ["ciao", "hello"])
+	
+		
+		{"ciao" ,"miao" , "gatto" , "g"} 
 	
 	
+	*/
 	
+	
+	public String[] salvaParole(String[] parole) {
+		
+		String[] risVett = new String[parole.length];
+		
+		for(int i = 0 , j= 0 ; i < parole.length; i++) {
+			
+			if(parole[i].length()   >= 3 ) {
+				
+				risVett[j] = parole[i];
+				j++;
+			}
+				
+		}
+		
+		return risVett;
+	}
 	
 	
 	
