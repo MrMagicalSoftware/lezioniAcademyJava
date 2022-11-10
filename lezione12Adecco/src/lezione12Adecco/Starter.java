@@ -9,6 +9,11 @@ public class Starter {
 		Scaffale scaffale = new Scaffale(7);
 		
 		
+		
+		
+		
+		
+		
 		/*
 		scaffale.aggiungiBevanda(  new Bevanda("cola", 0.33, 1, false)  );
 		scaffale.aggiungiBevanda(  new Bevanda("cola", 0.33, 1, false)  );

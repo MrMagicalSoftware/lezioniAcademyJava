@@ -47,6 +47,21 @@ public class Scaffale {
 	}
 	
 	
+	/**
+	 * 
+	 *  b ====> null
+	 *  
+	 *  null != null
+	 *    false       &&
+	 * 
+	 * 
+	 * if(  b != null  && b.getNome().equalsIgnoreCase(nomeBevanda)     ) 
+	 * 		sommaTotale += b.getCosto();
+	 * 
+	 * 
+	 * @param nomeBevanda
+	 * @return
+	 */
 	
 	
 	public double sommaScaffale(String nomeBevanda) {
