@@ -1,0 +1,10 @@
+FUNZIONI :
+
+
+1 ) CREARE UNA FUNZIONE CHE PRENDA IN INPUT UN VETTORE
+    DI BOOLEAN E RITORNA SE TRUE SE IL NUMERO DI TRUE E' MAGGIORE
+    DEI NUMERI DEL FALSE
+    
+    
+    [ true , true , true , false ]    -----> true 
+     [ true , false , false , false ]    -----> false 
