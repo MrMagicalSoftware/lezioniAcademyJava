@@ -8,3 +8,14 @@ FUNZIONI :
     
     [ true , true , true , false ]    -----> true 
      [ true , false , false , false ]    -----> false 
+
+
+
+2) CREARE UNA FUNZIONI CHE PRENDA IN INGRESSO
+  UN ARRAYLIST DI STRING E  RITORNI LA
+   SOMMATORIA DI TUTTE LE PAROLE :
+   
+   EX :  "CIAO" , "MIAO" , "C" --------> 9 
+   
+   INPUT UN ARRAYLIST DI TIPO STRING
+   OUT   UN NUMERO INTERO
