@@ -1,5 +1,6 @@
 https://json2csharp.com/code-converters/json-to-pojo<br /><br />
-
+https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
+https://www.thecocktaildb.com/api.php
 
 
 https://www.baeldung.com/h2-embedded-db-data-storage<br />
