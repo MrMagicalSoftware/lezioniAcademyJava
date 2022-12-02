@@ -1,0 +1,49 @@
+<p>lista-persona works!</p>
+
+
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-12 text-center mt-5">
+
+
+            <h1>Show Results</h1>
+
+            <b style="color:red;"> {{this.rispostaApi}}</b>
+
+            <li *ngFor="let e of this.vettPersona">
+                {{e.id + " " + e.nome + " " 
+                + e.cognome + " " + e.eta}}
+            </li>
+
+            <button class="btn btn-success" (click)="fetchData()"> Recupera Dati </button>
+
+            <hr>
+
+            <!-- FORM PER INVIO DATI-->
+
+            <!--data binding-->
+            <input type="text"   [(ngModel)] ="this.personaInviata.nome" placeholder="inserisci il nome">
+            <input type="text"   [(ngModel)] ="this.personaInviata.cognome" placeholder="inserisci il COGNOME">
+            <input type="number" [(ngModel)] ="this.personaInviata.eta" placeholder="inserisci il ETA">
+            
+            <button class="btn btn-warning" (click)="insertData()"> Inserisci Persona</button>
+
+            <hr>
+
+            <div>
+                <input type="number"   [(ngModel)] ="this.idDaEliminare" placeholder="inserisci id da rimuovere">
+                <button class="btn btn-danger" (click)="elimina()"> Cancella Persona </button>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+</div>
